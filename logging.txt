@@ -1,0 +1,764 @@
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/Addbook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book1",
+    "isbn": "109836",
+    "aisle": "12034",
+    "author": "Mahesh1"
+}
+HTTP/1.1 200 OK
+Date: Thu, 11 Jun 2020 04:52:01 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "Msg": "successfully added",
+    "ID": "10983612034"
+}
+Request method:	GET
+Request URI:	http://216.10.245.166/Library/GetBook.php?ID=10983612034
+Proxy:			<none>
+Request params:	<none>
+Query params:	ID=10983612034
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 11 Jun 2020 04:52:03 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+[
+    {
+        "book_name": "Book1",
+        "isbn": "109836",
+        "aisle": "12034",
+        "author": "Mahesh1"
+    }
+]
+Request method:	GET
+Request URI:	http://216.10.245.166/Library/GetBook.php?AuthorName=Mahesh1
+Proxy:			<none>
+Request params:	<none>
+Query params:	AuthorName=Mahesh1
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 11 Jun 2020 04:52:04 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+[
+    {
+        "book_name": "Book1",
+        "isbn": "100",
+        "aisle": "200"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1000",
+        "aisle": "2000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10000",
+        "aisle": "20000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000",
+        "aisle": "200000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000",
+        "aisle": "20000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000",
+        "aisle": "200000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000",
+        "aisle": "2000000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1000000",
+        "aisle": "2000000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10000000",
+        "aisle": "2000000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000000",
+        "aisle": "2000000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000000",
+        "aisle": "209"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "108",
+        "aisle": "209"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1088",
+        "aisle": "20937"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880",
+        "aisle": "209379"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880",
+        "aisle": "20937988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880",
+        "aisle": "209379880"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880",
+        "aisle": "20988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "108809",
+        "aisle": "20988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1088099",
+        "aisle": "20988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880999",
+        "aisle": "20988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880999",
+        "aisle": "209889"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "108809990",
+        "aisle": "209889"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100999",
+        "aisle": "209889"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1009959",
+        "aisle": "209889"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1009959",
+        "aisle": "209880"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10059",
+        "aisle": "98"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10059",
+        "aisle": "2309"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10059",
+        "aisle": "4809"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10059",
+        "aisle": "5456"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "8163"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "3722"
+    },
+    {
+        "book_name": "Book2",
+        "isbn": "100010",
+        "aisle": "5780"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "9042"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "4122"
+    },
+    {
+        "book_name": "Book2",
+        "isbn": "100010",
+        "aisle": "9947"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "9101"
+    },
+    {
+        "book_name": "Book2",
+        "isbn": "100010",
+        "aisle": "4183"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "1234"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1098",
+        "aisle": "1234"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "1234"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "5773"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "8971"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "12034"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10982",
+        "aisle": "1234"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "4090"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "3238"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "109836",
+        "aisle": "12034"
+    }
+]
+Request method:	GET
+Request URI:	http://216.10.245.166/Library/GetBook.php?AuthorName=Mahesh1
+Proxy:			<none>
+Request params:	<none>
+Query params:	AuthorName=Mahesh1
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 11 Jun 2020 04:52:04 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+[
+    {
+        "book_name": "Book1",
+        "isbn": "100",
+        "aisle": "200"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1000",
+        "aisle": "2000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10000",
+        "aisle": "20000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000",
+        "aisle": "200000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000",
+        "aisle": "20000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000",
+        "aisle": "200000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000",
+        "aisle": "2000000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1000000",
+        "aisle": "2000000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10000000",
+        "aisle": "2000000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000000",
+        "aisle": "2000000000"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100000000",
+        "aisle": "209"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "108",
+        "aisle": "209"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1088",
+        "aisle": "20937"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880",
+        "aisle": "209379"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880",
+        "aisle": "20937988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880",
+        "aisle": "209379880"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880",
+        "aisle": "20988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "108809",
+        "aisle": "20988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1088099",
+        "aisle": "20988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880999",
+        "aisle": "20988"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10880999",
+        "aisle": "209889"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "108809990",
+        "aisle": "209889"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "100999",
+        "aisle": "209889"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1009959",
+        "aisle": "209889"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1009959",
+        "aisle": "209880"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10059",
+        "aisle": "98"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10059",
+        "aisle": "2309"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10059",
+        "aisle": "4809"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10059",
+        "aisle": "5456"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "8163"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "3722"
+    },
+    {
+        "book_name": "Book2",
+        "isbn": "100010",
+        "aisle": "5780"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "9042"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "4122"
+    },
+    {
+        "book_name": "Book2",
+        "isbn": "100010",
+        "aisle": "9947"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "9101"
+    },
+    {
+        "book_name": "Book2",
+        "isbn": "100010",
+        "aisle": "4183"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10009",
+        "aisle": "1234"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "1098",
+        "aisle": "1234"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "1234"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "5773"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "8971"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "12034"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10982",
+        "aisle": "1234"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "4090"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "10986",
+        "aisle": "3238"
+    },
+    {
+        "book_name": "Book1",
+        "isbn": "109836",
+        "aisle": "12034"
+    }
+]
+Request method:	GET
+Request URI:	http://216.10.245.166/Library/GetBook.php?AuthorName=Invalid%20Author%20Name
+Proxy:			<none>
+Request params:	<none>
+Query params:	AuthorName=Invalid Author Name
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Thu, 11 Jun 2020 04:52:04 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "The book by requested bookid / author name does not exists!"
+}
+Request method:	GET
+Request URI:	http://216.10.245.166/Library/GetBook.php?ID=10983612034
+Proxy:			<none>
+Request params:	<none>
+Query params:	ID=10983612034
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 11 Jun 2020 04:52:04 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+[
+    {
+        "book_name": "Book1",
+        "isbn": "109836",
+        "aisle": "12034",
+        "author": "Mahesh1"
+    }
+]
+Request method:	GET
+Request URI:	http://216.10.245.166/Library/GetBook.php?ID=0987IVID
+Proxy:			<none>
+Request params:	<none>
+Query params:	ID=0987IVID
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Thu, 11 Jun 2020 04:52:04 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "The book by requested bookid / author name does not exists!"
+}
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/DeleteBook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ID": "10983612034"
+}
+HTTP/1.1 200 OK
+Date: Thu, 11 Jun 2020 04:52:04 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "book is successfully deleted"
+}
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/DeleteBook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ID": "10983612034"
+}
+HTTP/1.1 404 Not Found
+Date: Thu, 11 Jun 2020 04:52:05 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Delete Book operation failed, looks like the book doesnt exists"
+}
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/DeleteBook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ID": ""
+}
+HTTP/1.1 404 Not Found
+Date: Thu, 11 Jun 2020 04:52:05 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Delete Book operation failed, looks like the book doesnt exists"
+}

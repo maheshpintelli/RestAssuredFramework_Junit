@@ -1,0 +1,709 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-11T04:50:34.367Z",
+        "line": 13,
+        "name": "Verify if Book is being Successfully added using Addbook API",
+        "description": "",
+        "id": "validating-library-api;verify-if-book-is-being-successfully-added-using-addbook-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1529000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Addbook Payload with \"Book1\" \"109836\" \"12034\" \"Mahesh1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book1\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"109836\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"12034\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Mahesh1\"",
+                  "offset": 46
+                }
+              ],
+              "location": "stepDefinitions.AddBook.addbook_Payload_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2490000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User calls \"addBook\" API with \"POST\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addBook\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.AddBook.user_calls_API_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The API call is success with status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.AddBook.the_API_call_is_success_with_status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 865000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"Msg\" in response body is \"successfully added\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"successfully added\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.AddBook.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 642000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify ID created maps to \"Book1\" using \"getBookByID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book1\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"getBookByID\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.AddBook.verify_ID_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify ID created maps to \"Book1\" using \"getBookByAutorName\" API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book1\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"getBookByAutorName\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.AddBook.verify_ID_created_maps_to_using_API(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T04:50:40.289Z",
+        "line": 15,
+        "name": "Verify Book is getting retrieved using valid getBookByAutorName API",
+        "description": "",
+        "id": "validating-library-api;verify-book-is-getting-retrieved-using-valid-getbookbyautorname-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Valid Author Name is given",
+            "match": {
+              "location": "stepDefinitions.AddBook.valid_Author_Name_is_given()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User calls \"getBookByAutorName\" API with \"GET\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getBookByAutorName\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.AddBook.user_calls_API_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The API call is success with status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.AddBook.the_API_call_is_success_with_status(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T04:50:40.464Z",
+        "line": 20,
+        "name": "Verify Book is getting retrieved using invalid getBookByAutorName API",
+        "description": "",
+        "id": "validating-library-api;verify-book-is-getting-retrieved-using-invalid-getbookbyautorname-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Invalid Author Name is given",
+            "match": {
+              "location": "stepDefinitions.AddBook.invalid_Author_Name_is_given()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 139000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User calls \"getBookByAutorName\" API with \"GET\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getBookByAutorName\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.AddBook.user_calls_API_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The API call is success with status 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.AddBook.the_API_call_is_success_with_status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "\"msg\" in response body is \"The book by requested bookid / author name does not exists!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"The book by requested bookid / author name does not exists!\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.AddBook.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T04:50:40.638Z",
+        "line": 26,
+        "name": "Verify Book is getting retrieved using valid getBookByID API",
+        "description": "",
+        "id": "validating-library-api;verify-book-is-getting-retrieved-using-valid-getbookbyid-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Valid BookID is given",
+            "match": {
+              "location": "stepDefinitions.AddBook.valid_BookID_is_given()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User calls \"getBookByID\" API with \"GET\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getBookByID\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.AddBook.user_calls_API_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The API call is success with status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.AddBook.the_API_call_is_success_with_status(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T04:50:40.803Z",
+        "line": 31,
+        "name": "Verify Book is getting retrieved using invalid getBookByID API",
+        "description": "",
+        "id": "validating-library-api;verify-book-is-getting-retrieved-using-invalid-getbookbyid-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Invalid BookID is given",
+            "match": {
+              "location": "stepDefinitions.AddBook.invalid_BookID_is_given()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User calls \"getBookByID\" API with \"GET\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getBookByID\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.AddBook.user_calls_API_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "The API call is success with status 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.AddBook.the_API_call_is_success_with_status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "\"msg\" in response body is \"The book by requested bookid / author name does not exists!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"The book by requested bookid / author name does not exists!\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.AddBook.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T04:50:40.964Z",
+        "line": 37,
+        "name": "Verify if Delete Book functionality is working",
+        "description": "",
+        "id": "validating-library-api;verify-if-delete-book-functionality-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "DeleteBook Payload",
+            "match": {
+              "location": "stepDefinitions.AddBook.deletebook_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 127000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User calls \"deleteBook\" API with \"POST\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deleteBook\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.AddBook.user_calls_API_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "The API call is success with status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.AddBook.the_API_call_is_success_with_status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "\"msg\" in response body is \"book is successfully deleted\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"book is successfully deleted\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.AddBook.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T04:50:41.115Z",
+        "line": 43,
+        "name": "",
+        "description": "Verify getting error message and 404 status if user trying to delete already deleted Book ",
+        "id": "validating-library-api;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "DeleteBook Payload with already deleted BookID",
+            "match": {
+              "location": "stepDefinitions.AddBook.deletebook_Payload_with_already_deleted_BookID()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 266000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User calls \"deleteBook\" API with \"POST\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deleteBook\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.AddBook.user_calls_API_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "The API call is success with status 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.AddBook.the_API_call_is_success_with_status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "\"msg\" in response body is \"Delete Book operation failed, looks like the book doesnt exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Delete Book operation failed, looks like the book doesnt exists\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.AddBook.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T04:50:41.405Z",
+        "line": 50,
+        "name": "",
+        "description": "Verify getting error message and 404 status if user trying to delete book by blank BookID ",
+        "id": "validating-library-api;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "DeleteBook Payload with blank BookID",
+            "match": {
+              "location": "stepDefinitions.AddBook.deletebook_Payload_with_blank_BookID()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User calls \"deleteBook\" API with \"POST\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deleteBook\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.AddBook.user_calls_API_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "The API call is success with status 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.AddBook.the_API_call_is_success_with_status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "\"msg\" in response body is \"Delete Book operation failed, looks like the book doesnt exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Delete Book operation failed, looks like the book doesnt exists\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.AddBook.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validating library API",
+    "description": "",
+    "id": "validating-library-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/library.feature",
+    "tags": []
+  }
+]
